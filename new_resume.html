@@ -7,10 +7,11 @@
   <title>Kadir Kundakcioglu - MLOps Resume</title>
   <style>
     body {
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Georgia', Times, serif;
+      font-size: 12px;
       line-height: 1.4;
       color: #333;
-      margin: 30px;
+      /* margin: 30px; */
       /* padding: 10px; */
       box-sizing: border-box;
       /* background-color: #f9f9f9; */
@@ -24,66 +25,71 @@
       /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     }
 
+    .segment {
+      margin-bottom: 5px;
+    }
+
     .header {
       text-align: left;
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid #555;
       margin-bottom: 10px;
     }
 
     .header p {
-      margin: 5px 0px;
+      font-size: 14px;
+      margin: 0px 0px;
+    }
+
+    p {
+      margin: 0px;
     }
 
     h1 {
       color: #333;
       margin: 0;
-      font-size: 24px;
+      font-size: 22px;
     }
 
     h2 {
-      color: #555;
+      color: #303030;
       border-bottom: 1px solid #555;
-      padding-bottom: 5px;
-      margin: 5px 0px;
-      font-size: 18px;
+      /* padding-bottom: 5px; */
+      margin: 0px 0px 7px 0px;
+      font-size: 16px;
     }
 
     .job-title {
       font-weight: bold;
-      margin-bottom: 0px;
+      font-size: 14px;
+      color: #303030;
+      margin-top: 7px;
     }
 
     .job-date {
       font-style: italic;
+      font-size: 14px;
       color: #666;
       margin-bottom: 3px;
     }
 
     ul {
       padding-left: 20px;
-      margin: 0px 2px 5px 5px;
+      margin: 0px 2px 0px 5px;
+    }
+
+    ul strong {
+      color: #313131;
     }
 
     .contact-info {
+      /* font-size: 14px; */
+      margin-top: 3px;
       margin-bottom: 5px;
     }
 
     .contact-info p {
       margin: 0px 0;
       padding: 0px;
-    }
-
-    .two-column {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .column {
-      width: 48%;
-    }
-
-    .right-column {
-      margin-left: 7px;
     }
   </style>
 </head>
@@ -93,80 +99,111 @@
     <div class="header">
       <h1>Kadir Kundakcioglu</h1>
       <p>MLOps Engineer / Data Engineer / Full-stack Developer</p>
+      <div class="contact-info">
+        <p>
+          <a href="mailto:kadirkundakcioglu@outlook.com">kadirkundakcioglu@outlook.com</a> |
+          <a href="tel:+905527112021">+90 552 711 20 21</a> |
+          <a href="https://github.com/kadirkun" target="_blank">github.com/kadirkun</a> |
+          <a href="https://www.linkedin.com/in/kadirkundakcioglu" target="_blank">linkedin.com/in/kadirkundakcioglu</a>
+        </p>
+      </div>
     </div>
 
-    <div class="contact-info">
+    <!-- <div class="segment">
+      <h2>Professional History</h2>
       <p>
-        <a href="mailto:abdulkadirkundakcioglu@gmail.com">abdulkadirkundakcioglu@gmail.com</a> |
-        <a href="tel:+905527112021">+90 552 711 20 21</a> |
-        <a href="https://github.com/kadirkun" target="_blank">github.com/kadirkun</a> |
-        <a href="https://www.linkedin.com/in/kadirkundakcioglu" target="_blank">linkedin.com/in/kadirkundakcioglu</a>
+        bla bla bla
       </p>
+    </div> -->
+
+    <div class="segment">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, JavaScript, C#, Java, Scala, Dart, Lua, C++, Bash, SQL</li>
+        <li><strong>Tools & Frameworks:</strong> Apache Airflow, Apache Spark, Cloudera Impala, Terraform, MinIO,
+          Hadoop, Databricks,
+          Kafka, Postgres, Hive, MongoDB, Elastic Stack</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, Azure, Kubernetes, Helm, Terraform, Docker, GitHub CI</li>
+        <li><strong>Front-end:</strong> Flutter, React, Redux, GraphQL, ThreeJS, Vite</li>
+        <li><strong>Systems:</strong> Linux, Unix, Windows</li>
+      </ul>
     </div>
 
+    <div class="segment">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-title">CTO / MLOps Engineer / Full-stack Developer</div>
+        <div class="job-date">Nov 2023 - Aug 2024 | Loopn AI</div>
+        <ul>
+          <li><strong>Developed and deployed</strong> a web gateway with progress tracking and multi-part uploading,
+            reducing upload
+            errors
+            by 40%.</li>
+          <li><strong>Engineered an ML pipeline</strong> for 3D reconstructions using Gaussian Splatting, improving
+            processing time by
+            50%.
+          </li>
+          <li><strong>Built a 3D Gaussian web viewer</strong> for multi-platform use within 3 months.</li>
+          <li><strong>Implemented PyTorch model development environment</strong> and CI/CD pipelines, accelerating
+            deployment cycles by
+            30%.</li>
+          <li><strong>Designed and optimized an Apache Airflow pipeline</strong> for scalable 3D reconstructions on
+            AWS
+            Elastic
+            Kubernetes
+            Service.</li>
+          <li><strong>Created and configured base container images</strong> with CUDA and PyTorch support, reducing
+            model testing and
+            development time by 50%.</li>
+          <li><strong>Provisioned cloud infrastructure</strong> for web hosting, SSL, DNS, CI/CD, and model training
+            pipelines using
+            AWS
+            services and Terraform.</li>
+        </ul>
+      </div>
 
-    <div class="two-column">
+      <div class="job">
+        <div class="job-title">Full-stack Developer / Cloud Engineer</div>
+        <div class="job-date">Feb 2022 – Nov 2023 | Heltia</div>
+        <ul>
+          <li><strong>Built a scalable microservices ecosystem</strong> on Azure with ASP.NET Core, supporting 1M+
+            customers with
+            content
+            delivery, messaging, and video calls.</li>
+          <li><strong>Developed full-stack features</strong> in Flutter, including messaging using Firebase Cloud
+            Messaging and REST
+            APIs.
+          </li>
+          <li><strong>Integrated Notion to App API</strong>, for seamless content publishing, enabling 20+ articles
+            published and 2M reads daily.</li>
+          <li><strong>Implemented a dynamic recommendation engine</strong> using the D'Hondt algorithm, improving
+            content relevance.
+          </li>
+          <li><strong>Designed and maintained scalable cloud infrastructure</strong> with Azure DevOps CI/CD
+            pipelines,
+            MongoDB, and
+            App
+            Services.</li>
+        </ul>
+      </div>
 
-      <div class="column" style="width: 65%;">
-        <h2>Experience</h2>
+      <div class="job">
+        <div class="job-title">Data Engineer / Software Engineer</div>
+        <div class="job-date">Aug 2018 – Feb 2022 | Veloxity Inc</div>
+        <ul>
+          <li><strong>Led cloud migration</strong> of on-premise data infrastructure to Databricks, converting Spark
+            jobs, HDFS, Hive,
+            Cloudera Impala components, and Kafka pipelines within 6 months.</li>
+          <li><strong>Developed an in-house POI insertion tool</strong>, reducing manual work by 40 hours per month.
+          </li>
+          <li><strong>Designed and implemented a bi-directional GIS data processing job</strong>, utilizing a
+            cost-effective algorithm
+            that
+            reduced processing costs by 45x.</li>
+        </ul>
+      </div>
 
-        <div class="job">
-          <div class="job-title">CTO / MLOps Engineer / Full-stack Developer</div>
-          <div class="job-date">Nov 2023 - Aug 2024 | Loopn AI</div>
-          <ul>
-            <li><strong>Developed and deployed</strong> a web gateway with progress tracking and multi-part uploading, reducing upload
-              errors
-              by 40%.</li>
-            <li><strong>Engineered an ML pipeline</strong> for 3D reconstructions using Gaussian Splatting, improving processing time by
-              50%.
-            </li>
-            <li><strong>Built a 3D Gaussian web viewer</strong> for multi-platform use within 3 months.</li>
-            <li><strong>Implemented PyTorch model development environment</strong> and CI/CD pipelines, accelerating deployment cycles by
-              30%.</li>
-            <li><strong>Designed and optimized an Apache Airflow pipeline</strong> for scalable 3D reconstructions on AWS Elastic
-              Kubernetes
-              Service.</li>
-            <li><strong>Created and configured base container images</strong> with CUDA and PyTorch support, reducing model testing and
-              development time by 50%.</li>
-            <li><strong>Provisioned cloud infrastructure</strong> for web hosting, SSL, DNS, CI/CD, and model training pipelines using
-              AWS
-              services and Terraform.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <div class="job-title">Full-stack Developer / Cloud Engineer</div>
-          <div class="job-date">Feb 2022 – Nov 2023 | Heltia</div>
-          <ul>
-            <li><strong>Built a scalable microservices ecosystem</strong> on Azure with ASP.NET Core, supporting 1M+ customers with
-              content
-              delivery, messaging, and video calls.</li>
-            <li><strong>Developed full-stack features</strong> in Flutter, including messaging using Firebase Cloud Messaging and REST
-              APIs.
-            </li>
-            <li><strong>Integrated Notion to App API</strong>, for seamless content publishing, enabling 20+ articles published and 2M reads daily.</li>
-            <li><strong>Implemented a dynamic recommendation engine</strong> using the D'Hondt algorithm, improving content relevance.
-            </li>
-            <li><strong>Designed and maintained scalable cloud infrastructure</strong> with Azure DevOps CI/CD pipelines, MongoDB, and
-              App
-              Services.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <div class="job-title">Data Engineer / Software Engineer</div>
-          <div class="job-date">Aug 2018 – Feb 2022 | Veloxity Inc</div>
-          <ul>
-            <li><strong>Led cloud migration</strong> of on-premise data infrastructure to Databricks, converting Spark jobs, HDFS, Hive,
-              Cloudera Impala components, and Kafka pipelines within 6 months.</li>
-            <li><strong>Developed an in-house POI insertion tool</strong>, reducing manual work by 40 hours per month.</li>
-            <li><strong>Designed and implemented a bi-directional GIS data processing job</strong>, utilizing a cost-effective algorithm
-              that
-              reduced processing costs by 45x.</li>
-          </ul>
-        </div>
-
-        <!-- <div class="job">
+      <!-- <div class="job">
           <div class="job-title">Freelance Data Engineer / Consultant</div>
           <div class="job-date">Jun 2021 – Jan 2022 | Last Bite Games</div>
           <ul>
@@ -180,49 +217,52 @@
             </li>
           </ul>
         </div> -->
+    </div>
 
-
+    <div class="segment">
+      <h2>Education</h2>
+      <div class="job">
+        <div class="job-title">MEF University</div>
+        <div class="job-date">2015 – 2021 | BS in Computer Science, Honors</div>
+        <ul>
+          <li>
+            <strong>Teaching Assistant</strong> <i>Oct 2018 – Jun 2020</i>: Distributed Systems, Computer Architecture, and System Programming
+          </li>
+        </ul>
       </div>
-      
-      <div style="width: 0px;"> </div>
+    </div>
 
-      <div class="column right-column">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Programming:</strong> Python, JavaScript, C#, Java, Scala, Dart, Lua, C++, Bash, SQL</li>
-          <li><strong>Tools & Frameworks:</strong> Apache Airflow, Apache Spark, Cloudera Impala, Terraform, MinIO, Hadoop, Databricks,
-            Kafka, Postgres, Hive, MongoDB, Elastic Stack</li>
-          <li><strong>Cloud & DevOps:</strong> AWS, Azure, Kubernetes, Helm, Terraform, Docker, GitHub CI</li>
-          <li><strong>Front-end:</strong> Flutter, React, Redux, GraphQL, ThreeJS, Vite</li>
-          <li><strong>Systems:</strong> Linux, Unix, Windows</li>
-        </ul>
+    <div class="segment">
+      <h2>Languages</h2>
+      <ul>
+        <li>Turkish (Native)</li>
+        <li>English (C1)</li>
+      </ul>
+    </div>
 
-        <h2>Languages</h2>
-        <ul>
-          <li>Turkish (Native)</li>
-          <li>English (C1)</li>
-        </ul>
+    <div class="segment">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Teamwork, Conflict Resolution, Critical Thinking, Learning Agility</li>
+      </ul>
+    </div>
 
-        <h2>Soft Skills</h2>
-        <ul>
-          <li>Teamwork, Conflict Resolution, Critical Thinking, Learning Agility</li>
-        </ul>
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Brain Computer Interface with SNN:</strong> Developed an SNN to predict objects from human eye
-            movements, achieving 1000x power efficiency for neuromorphic hardware implementation.</li>
-          <li><strong>diFUSE - Distributed File Storage:</strong> Implemented a scalable backend in a containerized
-            environment, integrating with FUSE for easy attachment as a drive.</li>
-          <li><strong>SPA - Student Performance Analysis:</strong> Built an analytic system for universities to track
-            exams and assignments, integrating OCR for streamlined scoring.</li>
-          <li><strong>Snnake:</strong> Created a Snake game with genetic mutation algorithms using neural networks and
-            meta-heuristic ML techniques from scratch.</li>
-          <!-- <li><strong>AutoWater:</strong> Created a smart watering system with conditional scheduling based on sensor
+    <div class="segment">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Brain Computer Interface with SNN:</strong> Developed an SNN to predict objects from human eye
+          movements, achieving 1000x power efficiency for neuromorphic hardware implementation.</li>
+        <li><strong>diFUSE - Distributed File Storage:</strong> Implemented a scalable backend in a containerized
+          environment, integrating with FUSE for easy attachment as a drive.</li>
+        <li><strong>SPA - Student Performance Analysis:</strong> Built an analytic system for universities to track
+          exams and assignments, integrating OCR for streamlined scoring.</li>
+        <li><strong>Snnake:</strong> Created a Snake game with genetic mutation algorithms using neural networks and
+          meta-heuristic ML techniques from scratch.</li>
+        <!-- <li><strong>AutoWater:</strong> Created a smart watering system with conditional scheduling based on sensor
             data, achieving 20% water savings in agricultural tests.</li> -->
-          <li><strong>Beer Stock Exchange:</strong> Developed a real-time stock exchange platform for beers, handling
-            over 5,000 transactions per minute.</li>
-        </ul>
-      </div>
+        <li><strong>Beer Stock Exchange:</strong> Developed a real-time stock exchange platform for beers, handling
+          over 5,000 transactions per minute.</li>
+      </ul>
     </div>
   </div>
 </body>
