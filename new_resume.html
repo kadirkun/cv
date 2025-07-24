@@ -9,9 +9,10 @@
     body {
       font-family: 'Arial', sans-serif;
       font-size: 12px;
-      line-height: 1.4;
-      color: #333;
+      line-height: 1.5;
+      color: #000;
       margin: 0;
+      padding: 20px;
       box-sizing: border-box;
     }
 
@@ -19,71 +20,107 @@
       max-width: 210mm;
       margin: 0 auto;
       background-color: #fff;
-      /* padding: 15px; */
+      padding: 0;
     }
 
     .header {
       text-align: left;
-      border-bottom: 1px solid #555;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #000;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
     }
 
     .header-title {
-      font-size: 14px;
+      font-size: 15px;
+      margin-top: 5px;
     }
 
     h1 {
-      color: #333;
-      margin: 0 0 0 0;
-      font-size: 20px;
+      color: #000;
+      margin: 0 0 5px 0;
+      font-size: 26px;
+      font-weight: bold;
     }
 
     h2 {
-      color: #303030;
-      border-bottom: 1px solid #999;
-      padding-bottom: 3px;
-      margin: 10px 0 5px 0;
-      font-size: 14px;
+      color: #000;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin: 15px 0 8px 0;
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
     p {
-      margin: 0 0 0px 0;
+      margin: 0 0 5px 0;
     }
 
     .job-title {
       font-weight: bold;
-      font-size: 13px;
-      color: #303030;
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 2px;
     }
 
     .job-date {
-      font-style: italic;
+      font-style: normal;
       font-size: 12px;
-      color: #666;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .company-name {
+      font-weight: bold;
+      color: #000;
     }
 
     ul {
-      padding-left: 20px;
-      margin: 5px 0;
+      padding-left: 18px;
+      margin: 8px 0;
     }
 
     li {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
+      text-align: justify;
     }
 
     .contact-info {
       font-size: 12px;
-      margin-top: 3px;
+      margin-top: 5px;
     }
 
     .contact-info a {
-      color: #2158bd;
+      color: #000;
       text-decoration: none;
     }
 
     .segment {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      page-break-inside: avoid;
+    }
+
+    .job {
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+
+    strong {
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Print optimization */
+    @media print {
+      body {
+        font-size: 11px;
+        line-height: 1.4;
+      }
+      .container {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+      }
     }
   </style>
 </head>
@@ -92,16 +129,13 @@
   <div class="container">
     <div class="header">
       <h1>Kadir Kundakcioglu</h1>
-      <!-- <p>MLOps Engineer / Data Engineer / Full-stack Developer</p> -->
       <p class="header-title">MLOps Engineer</p>
-      <!-- <p class="header-title">Backend Engineer</p> -->
       <div class="contact-info">
         <p>
-          <a href="mailto:kadirkundakcioglu@outlook.com" aria-details="Email">kadirkundakcioglu@outlook.com</a> |
-          <a href="tel:+905527112021" aria-details="Phone Number">+90 552 711 20 21</a> |
-          <a href="https://github.com/kadirkun" aria-details="GitHub" target="_blank">github.com/kadirkun</a> |
-          <a href="https://www.linkedin.com/in/kadirkundakcioglu" aria-details="LinkedIn"
-            target="_blank">linkedin.com/in/kadirkundakcioglu</a>
+          Email: <a href="mailto:kadirkundakcioglu@outlook.com">kadirkundakcioglu@outlook.com</a> | 
+          Phone: <a href="tel:+905527112021">+90 552 711 20 21</a> | 
+          GitHub: <a href="https://github.com/kadirkun" target="_blank">github.com/kadirkun</a> | 
+          LinkedIn: <a href="https://www.linkedin.com/in/kadirkundakcioglu" target="_blank">linkedin.com/in/kadirkundakcioglu</a>
         </p>
       </div>
     </div>
@@ -109,40 +143,16 @@
     <!-- <div class="segment">
       <h2>Professional Summary</h2>
       <p>
-        Experienced Backend Engineer with expertise in designing, provisioning, and maintaining infrastructure for
-        complex systems, including custom on-demand generative AI solutions. Adept at quickly learning and adapting to
-        new workflows and environments, ensuring seamless integration and optimized performance. Skilled in
-        goal-oriented planning and capable of developing innovative solutions to address challenging technical problems.
+        Experienced MLOps Engineer and Backend Developer with expertise in designing, provisioning, and maintaining infrastructure for complex systems, including custom on-demand generative AI solutions. Proven track record in cloud migration, data pipeline optimization, and scalable system architecture. Skilled in end-to-end ML pipeline development, from data processing to model deployment, with strong capabilities in goal-oriented planning and innovative problem-solving.
       </p>
     </div> -->
 
     <div class="segment">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, Bash, C#, Java, Scala, Dart, SQL, JavaScript, TypeScript
-        </li>
-        <li><strong>Tools & Frameworks:</strong> Apache Airflow, Apache Spark, Kafka, Cloudera Impala, Terraform, MinIO,
-          Hadoop, Databricks, Postgres, Hive, MongoDB, Elastic Stack</li>
-        <li><strong>Cloud & DevOps:</strong> AWS, Azure, Kubernetes, Helm, Terraform, Docker, GitHub CI</li>
-        <li><strong>Front-end:</strong> Flutter, Svelte, ThreeJS, Vite</li>
-        <li><strong>Systems:</strong> Linux, Unix, Windows, KVM, Proxmox VE</li>
-      </ul>
-    </div>
-
-    <div class="segment">
-      <h2>Experience</h2>
-      <!-- <div class="job">
-        <div class="job-title">Full-stack Developer</div>
-        <div class="job-date">Aug 2023 - present | Risk Adjusted</div>
-        <ul>
-          <li><strong>Design and implement</strong> data processing and model training pipeline with Lambda functions on Kubernetes via Terraform and Helm</li>
-          <li><strong>Delivering Web Console</strong> that users manage their data and models. reviewing result and operate on it in realtime and collaboratively</li>
-        </ul>
-      </div> -->
+      <h2>Professional Experience</h2>
       
       <div class="job">
         <div class="job-title">Senior Backend Engineer</div>
-        <div class="job-date">Mar 2025 – present | <a href="https://vagon.io/" target="_blank">Vagon Inc.</a></div>
+        <div class="job-date">March 2025 – Present | <span class="company-name">Vagon Inc.</span></div>
         <ul>
           <li><strong>Engineered and maintained a custom Linux distribution</strong> for Vagon Virtual Environment, enabling seamless on-premises deployments and expanding enterprise product offerings.</li>
           <li><strong>Integrated Wine on Linux</strong> for application streaming, deploying both containerized and AWS EC2 AIM solutions. Achieved a 40% reduction in Windows licensing costs and improved instance start times by 70%.</li>
@@ -151,32 +161,28 @@
       </div>
 
       <div class="job">
-        <div class="job-title">Co-founder / CTO <!-- / MLOps Engineer --></div>
-        <div class="job-date">Nov 2023 - Aug 2024 | <a href="https://www.loopn.ai/" aria-details="LoopN AI"
-            target="_blank">Loopn AI</a></div>
+        <div class="job-title">Freelance Backend Engineer</div>
+        <div class="job-date">August 2024 – Feb 2025 | <span class="company-name">Risk Adjusted</span></div>
+        <ul>
+          <!-- Creating a web ui for risk assessment tools with svelte that displays real-time data and analytics -->
+          <li><strong>Developed a web UI</strong> for risk assessment tools using Svelte, providing real-time data and analytics to enhance user decision-making.</li>
+          <!-- Design and provision kubernetes clusters using terraform for scalable ML workloads with Nuclio, Minio and Apache Iceberg. And kubernetes cluster can be shipped to any insurance companies infrastructure -->
+          <li><strong>Designed and provisioned Kubernetes clusters</strong> using Terraform for scalable ML workloads with Nuclio, Minio, and Apache Iceberg. These clusters can be shipped to any insurance company's infrastructure, ensuring flexibility and adaptability.</li>
+          <!-- Providing a work space for data scientists with JupyterHub and managed notebook instances -->
+          <li><strong>Provided a work space for data scientists</strong> with JupyterHub and managed notebook instances, enabling collaborative development and experimentation with ML models.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Co-founder / Chief Technology Officer</div>
+        <div class="job-date">November 2023 - August 2024 | <span class="company-name">Loopn AI</span></div>
         <p>
-          Loopn AI is a SaaS platform specializing in 3D scene reconstruction from videos and images. Our
-          primary focus is on the real estate market, where we transform user experiences by offering immersive 3D tours
-          accessible on PC, VR, and mobile devices.
-          As the CTO, I oversee the end-to-end development and delivery of our cutting-edge technologies, ensuring they
-          meet customer needs and drive innovation in the industry.
+          Loopn AI is a SaaS platform specializing in 3D scene reconstruction from videos and images, primarily serving the real estate market with immersive 3D tours accessible on PC, VR, and mobile devices. As CTO, I oversaw end-to-end development and delivery of cutting-edge technologies, ensuring alignment with customer needs and industry innovation.
         </p>
         <ul>
-          <li><strong>Designed and implemented an ML pipeline</strong> on a Kubernetes cluster using custom
-            GPU-accelerated PyTorch containers, enabling efficient development, building, and deployment of ML models.
-            These models were seamlessly integrated with a web-based UI using AirFlow to deliver scalable, real-time
-            solutions to
-            customers.
-          </li>
-          <li><strong>Provisioned and optimized cloud infrastructure</strong> for ML training and inference on AWS,
-            enabling seamless end-to-end CI/CD processes. Designed scalable web hosting and a CDN network to deliver
-            model results to customers in seconds, leveraging Terraform for consistent and efficient infrastructure
-            management.
-          </li>
-          <li><strong> Led end-to-end UI/UX design processes </strong> by conducting user interviews, analyzing
-            feedback, and implementing data-driven improvements to web applications that aligned with business
-            objectives and enhanced user satisfaction
-          </li>
+          <li><strong>Designed and implemented ML pipeline</strong> on Kubernetes cluster using custom GPU-accelerated PyTorch containers, enabling efficient development, building, and deployment of ML models with AirFlow integration for scalable, real-time customer solutions.</li>
+          <li><strong>Provisioned and optimized cloud infrastructure</strong> for ML training and inference on AWS, enabling seamless end-to-end CI/CD processes with scalable web hosting and CDN network delivering model results in seconds using Terraform.</li>
+          <li><strong>Led end-to-end UI/UX design processes</strong> by conducting user interviews, analyzing feedback, and implementing data-driven improvements to web applications that aligned with business objectives and enhanced user satisfaction.</li>
 
         </ul>
 
@@ -210,42 +216,23 @@
 
       <div class="job">
         <div class="job-title">Full-stack Developer</div>
-        <div class="job-date">Feb 2022 – Nov 2023 | Heltia</div>
+        <div class="job-date">February 2022 – November 2023 | <span class="company-name">Heltia</span></div>
         <ul>
-          <li><strong>Built a scalable microservices ecosystem</strong> on Azure with ASP.NET Core, supporting 1M+
-            customers with
-            content
-            delivery, messaging, and video calls.</li>
-          <li><strong>Developed full-stack features</strong> in Flutter, including messaging using Firebase Cloud
-            Messaging and REST
-            APIs.
-          </li>
-          <li><strong>Integrated Notion to App API</strong>, for seamless content publishing, enabling 20+ articles
-            published and 2M reads daily.</li>
-          <li><strong>Implemented a dynamic recommendation engine</strong> using the D'Hondt algorithm, improving
-            content relevance.
-          </li>
-          <li><strong>Designed and maintained scalable cloud infrastructure</strong> with Azure DevOps CI/CD
-            pipelines,
-            MongoDB, and
-            App
-            Services.</li>
+          <li><strong>Built scalable microservices ecosystem</strong> on Azure with ASP.NET Core, supporting 1M+ customers with content delivery, messaging, and video calls.</li>
+          <li><strong>Developed full-stack features</strong> in Flutter, including messaging using Firebase Cloud Messaging and REST APIs.</li>
+          <li><strong>Integrated Notion to App API</strong> for seamless content publishing, enabling 20+ articles published and 2M reads daily.</li>
+          <li><strong>Implemented dynamic recommendation engine</strong> using D'Hondt algorithm, improving content relevance and user engagement.</li>
+          <li><strong>Designed and maintained scalable cloud infrastructure</strong> with Azure DevOps CI/CD pipelines, MongoDB, and App Services.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-title">Data Engineer</div>
-        <div class="job-date">Aug 2018 – Feb 2022 | Veloxity Inc</div>
+        <div class="job-date">August 2018 – February 2022 | <span class="company-name">Veloxity Inc</span></div>
         <ul>
-          <li><strong>Led cloud migration</strong> of on-premise data infrastructure to Databricks, converting Spark
-            jobs, HDFS, Hive,
-            Cloudera Impala components, and Kafka pipelines within 6 months.</li>
-          <li><strong>Developed an in-house POI insertion tool</strong>, reducing manual work by 40 hours per month.
-          </li>
-          <li><strong>Designed and implemented a bi-directional GIS data processing job</strong>, utilizing a
-            cost-effective algorithm
-            that
-            reduced processing costs by 45x.</li>
+          <li><strong>Led cloud migration</strong> of on-premise data infrastructure to Databricks, converting Spark jobs, HDFS, Hive, Cloudera Impala components, and Kafka pipelines within 6 months.</li>
+          <li><strong>Developed in-house POI insertion tool</strong>, reducing manual work by 40 hours per month and improving operational efficiency.</li>
+          <li><strong>Designed and implemented bi-directional GIS data processing job</strong>, utilizing cost-effective algorithm that reduced processing costs by 45x.</li>
         </ul>
       </div>
 
@@ -266,15 +253,24 @@
     </div>
 
     <div class="segment">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, Bash, C#, Java, Scala, Dart, SQL, JavaScript, TypeScript</li>
+        <li><strong>ML/Data Tools:</strong> Apache Airflow, Apache Spark, Kafka, Cloudera Impala, Databricks, PyTorch, Hadoop, Hive</li>
+        <li><strong>Cloud & Infrastructure:</strong> AWS, Azure, Kubernetes, Helm, Terraform, Docker, GitHub CI/CD, MinIO</li>
+        <li><strong>Databases:</strong> PostgreSQL, MongoDB, Elastic Stack</li>
+        <li><strong>Frontend Technologies:</strong> Flutter, Svelte, Three.js, Vite</li>
+        <li><strong>Operating Systems:</strong> Linux, Unix, Windows, KVM, Proxmox VE</li>
+      </ul>
+    </div>
+
+    <div class="segment">
       <h2>Education</h2>
       <div class="job">
-        <div class="job-title">MEF University</div>
-        <div class="job-date">2015 – 2021 | BS in Computer Science, Honors</div>
+        <div class="job-title">Bachelor of Science in Computer Science, Honors</div>
+        <div class="job-date">2015 – 2021 | <span class="company-name">MEF University</span></div>
         <ul>
-          <li>
-            <strong>Teaching Assistant</strong> <i>(Oct 2018 – Jun 2020)</i>: Distributed Systems, Computer
-            Architecture, and System Programming
-          </li>
+          <li><strong>Teaching Assistant</strong> (October 2018 – June 2020): Distributed Systems, Computer Architecture, and System Programming</li>
         </ul>
       </div>
     </div>
@@ -295,20 +291,13 @@
     </div> -->
 
     <div class="segment">
-      <h2>Projects</h2>
+      <h2>Fun Projects</h2>
       <ul>
-        <li><strong>Brain Computer Interface with SNN:</strong> Developed an SNN to predict objects from human eye
-          movements, achieving 1000x power efficiency for neuromorphic hardware implementation.</li>
-        <li><strong>diFUSE - Distributed File Storage:</strong> Implemented a scalable backend in a containerized
-          environment, integrating with FUSE for easy attachment as a drive.</li>
-        <li><strong>SPA - Student Performance Analysis:</strong> Built an analytic system for universities to track
-          exams and assignments, integrating OCR for streamlined scoring.</li>
-        <li><strong>Snnake:</strong> Created a Snake game with genetic mutation algorithms using neural networks and
-          meta-heuristic ML techniques from scratch.</li>
-        <!-- <li><strong>AutoWater:</strong> Created a smart watering system with conditional scheduling based on sensor
-            data, achieving 20% water savings in agricultural tests.</li> -->
-        <li><strong>Beer Stock Exchange:</strong> Developed a real-time stock exchange platform for beers, handling
-          over 5,000 transactions per minute.</li>
+        <li><strong>Brain Computer Interface with SNN:</strong> Developed Spiking Neural Network to predict objects from human eye movements, achieving 1000x power efficiency for neuromorphic hardware implementation.</li>
+        <li><strong>diFUSE - Distributed File Storage:</strong> Implemented scalable backend in containerized environment, integrating with FUSE for easy attachment as drive.</li>
+        <li><strong>SPA - Student Performance Analysis:</strong> Built analytic system for universities to track exams and assignments, integrating OCR for streamlined scoring.</li>
+        <li><strong>Snnake:</strong> Created Snake game with genetic mutation algorithms using neural networks and meta-heuristic ML techniques from scratch.</li>
+        <li><strong>Beer Stock Exchange:</strong> Developed real-time stock exchange platform for beers, handling over 5,000 transactions per minute.</li>
       </ul>
     </div>
   </div>
