@@ -1,0 +1,10 @@
+- Add summary to Loopn 
+
+- Change Loopn items as solutions and their whys and how and used technologies 
+  "Navigating through arbitrary technical decisions and iterating on it to stay im desired path"
+
+- mention end to end heavily
+
+- At max 5 item
+
+- Highlight keywords in experiences
