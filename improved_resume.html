@@ -7,171 +7,146 @@
   <title>Kadir Kundakcioglu</title>
   <style>
     body {
-      font-family: 'Times New Roman', serif;
-      font-size: 11px;
-      line-height: 1.4;
-      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      line-height: 1.3;
+      color: #000;
       margin: 0;
-      padding: 20px;
+      padding: 15px;
       box-sizing: border-box;
-      background-color: #f8f9fa;
+      background-color: #fff;
     }
 
     .container {
       max-width: 210mm;
       margin: 0 auto;
       background-color: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border: 1px solid #e0e0e0;
+      padding: 0;
     }
 
     .header {
-      text-align: center;
-      border-bottom: 3px double #2c3e50;
-      margin-bottom: 20px;
-      padding-bottom: 15px;
+      text-align: left;
+      border-bottom: 1px solid #000;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
     }
 
     .header-title {
-      font-size: 14px;
-      margin-top: 5px;
-      color: #555;
-      font-style: italic;
+      font-size: 12px;
+      margin-top: 3px;
+      color: #000;
+      font-weight: normal;
     }
 
     h1 {
-      color: #2c3e50;
-      margin: 0 0 8px 0;
-      font-size: 28px;
+      color: #000;
+      margin: 0 0 4px 0;
+      font-size: 20px;
       font-weight: bold;
-      letter-spacing: 1px;
     }
 
     h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #34495e;
-      padding-bottom: 3px;
-      margin: 20px 0 10px 0;
-      font-size: 16px;
+      color: #000;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin: 12px 0 6px 0;
+      font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
     p {
-      margin: 0 0 6px 0;
-      text-align: justify;
+      margin: 0 0 3px 0;
     }
 
     .job-title {
       font-weight: bold;
-      font-size: 13px;
-      color: #2c3e50;
-      margin-bottom: 3px;
+      font-size: 11px;
+      color: #000;
+      margin-bottom: 1px;
     }
 
     .job-date {
-      font-style: italic;
-      font-size: 11px;
-      color: #666;
-      margin-bottom: 8px;
+      font-style: normal;
+      font-size: 10px;
+      color: #000;
+      margin-bottom: 4px;
     }
 
     .company-name {
       font-weight: bold;
-      color: #34495e;
+      color: #000;
     }
 
     ul {
-      padding-left: 20px;
-      margin: 10px 0;
+      padding-left: 16px;
+      margin: 4px 0 8px 0;
     }
 
     li {
-      margin-bottom: 5px;
-      text-align: justify;
-      line-height: 1.5;
+      margin-bottom: 2px;
+      line-height: 1.3;
     }
 
     .contact-info {
-      font-size: 11px;
-      margin-top: 8px;
-      color: #555;
+      font-size: 10px;
+      margin-top: 3px;
+      color: #000;
     }
 
     .contact-info a {
-      color: #2980b9;
+      color: #000;
       text-decoration: none;
     }
 
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
     .segment {
-      margin-bottom: 18px;
+      margin-bottom: 10px;
       page-break-inside: avoid;
     }
 
     .job {
-      margin-bottom: 15px;
+      margin-bottom: 8px;
       page-break-inside: avoid;
-      padding-left: 5px;
-      border-left: 3px solid #ecf0f1;
     }
 
     strong {
       font-weight: bold;
-      color: #2c3e50;
+      color: #000;
     }
 
-    /* Technical skills styling */
+    /* Remove decorative elements for ATS compatibility */
     .tech-skills {
-      background-color: #f8f9fa;
-      padding: 15px;
-      border-left: 4px solid #3498db;
-      margin: 10px 0;
+      margin: 4px 0;
     }
 
     .tech-skills ul {
       margin: 0;
-      padding-left: 15px;
+      padding-left: 16px;
     }
 
     .tech-skills li {
-      margin-bottom: 8px;
+      margin-bottom: 3px;
     }
 
-    /* Education styling */
     .education-item {
-      background-color: #fafafa;
-      padding: 10px;
-      border: 1px solid #e0e0e0;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     /* Print optimization */
     @media print {
       body {
-        font-size: 10px;
-        line-height: 1.3;
+        font-size: 9px;
+        line-height: 1.2;
         background-color: white;
+        padding: 10px;
       }
       .container {
         max-width: none;
         margin: 0;
-        padding: 15px;
-        box-shadow: none;
-        border: none;
+        padding: 0;
       }
-      .tech-skills {
-        background-color: white;
-        border-left: 2px solid #333;
-      }
-      .education-item {
-        background-color: white;
-        border: 1px solid #333;
+      .segment {
+        margin-bottom: 8px;
       }
     }
   </style>
@@ -199,9 +174,9 @@
         <div class="job-title">Senior Backend Engineer</div>
         <div class="job-date">March 2025 – Present | <span class="company-name">Vagon Inc.</span></div>
         <ul>
-          <li><strong>Engineered custom Debian-based Linux distribution</strong> for Virtual Environment platform, enabling seamless on-premises deployments; expanded enterprise product offerings with cost-effective virtualization solutions.</li>
-          <li><strong>Integrated Wine compatibility layer on Linux infrastructure</strong> for application streaming across containerized and AWS EC2 environments; achieved 40% reduction in Windows licensing costs and 70% improvement in instance start times.</li>
-          <li><strong>Designed scalable web service architecture</strong> enabling user interaction with Cloud Computer instances via MCP protocols and advanced LLMs; enhanced automation capabilities and user experience through AI integration.</li>
+          <li><strong>Engineered custom Debian-based Linux distribution</strong> for Virtual Environment platform, enabling on-premises deployments and expanding enterprise offerings with cost-effective virtualization.</li>
+          <li><strong>Integrated Wine compatibility layer</strong> for application streaming across containerized and AWS EC2 environments; achieved 40% reduction in Windows licensing costs and 70% improvement in start times.</li>
+          <li><strong>Designed scalable web service architecture</strong> enabling user interaction with Cloud Computer instances via MCP protocols and LLMs; enhanced automation and user experience through AI integration.</li>
         </ul>
       </div>
 
@@ -209,9 +184,9 @@
         <div class="job-title">Senior Backend Engineer</div>
         <div class="job-date">August 2024 – Feb 2025 | <span class="company-name">Risk Adjusted</span></div>
         <ul>
-          <li><strong>Developed real-time risk assessment web interface</strong> using Svelte framework with integrated analytics dashboard; delivered comprehensive user decision-making tools within 4-month development cycle.</li>
-          <li><strong>Provisioned Kubernetes-based cloud infrastructure</strong> with Terraform for scalable ML workloads, integrating serverless pipelines, object storage, and data lakehouse architecture; delivered portable solutions deployable across insurance infrastructures.</li>
-          <li><strong>Implemented collaborative data science workspace</strong> with JupyterHub and managed notebook instances; enabled seamless ML model development and experimentation for distributed teams.</li>
+          <li><strong>Developed real-time risk assessment web interface</strong> using Svelte framework with integrated analytics dashboard; delivered comprehensive decision-making tools within 4-month cycle.</li>
+          <li><strong>Provisioned Kubernetes-based cloud infrastructure</strong> with Terraform for scalable ML workloads, integrating serverless pipelines and data lakehouse architecture; delivered portable solutions across insurance infrastructures.</li>
+          <li><strong>Implemented collaborative data science workspace</strong> with JupyterHub and managed notebook instances; enabled seamless ML model development for distributed teams.</li>
         </ul>
       </div>
 
@@ -219,12 +194,12 @@
         <div class="job-title">Co-founder / Chief Technology Officer</div>
         <div class="job-date">November 2023 - August 2024 | <span class="company-name">Loopn AI</span></div>
         <p>
-          Loopn AI is a SaaS platform specializing in 3D scene reconstruction from videos and images, primarily serving the real estate market with immersive 3D tours accessible on PC, VR, and mobile devices. As CTO, I oversaw end-to-end development and delivery of cutting-edge technologies, ensuring alignment with customer needs and industry innovation.
+          SaaS platform specializing in 3D scene reconstruction from videos/images for real estate market with immersive 3D tours on PC, VR, and mobile.
         </p>
         <ul>
-          <li><strong>Architected ML pipeline infrastructure</strong> on Kubernetes clusters using custom GPU-accelerated PyTorch containers and AirFlow orchestration; enabled efficient model development and real-time customer solution deployment.</li>
-          <li><strong>Optimized cloud infrastructure architecture</strong> for ML training and inference on AWS with Terraform automation; implemented scalable CI/CD processes delivering model results in seconds through integrated CDN network.</li>
-          <li><strong>Directed comprehensive UI/UX design strategy</strong> through user interviews, feedback analysis, and data-driven improvements; delivered web applications aligned with business objectives and enhanced user satisfaction metrics.</li>
+          <li><strong>Architected ML pipeline infrastructure</strong> on Kubernetes with custom GPU-accelerated PyTorch containers and AirFlow orchestration; enabled efficient model development and real-time deployment.</li>
+          <li><strong>Optimized cloud infrastructure</strong> for ML training/inference on AWS with Terraform automation; implemented scalable CI/CD delivering model results in seconds through CDN.</li>
+          <li><strong>Directed UI/UX design strategy</strong> through user interviews and data-driven improvements; delivered web applications aligned with business objectives and enhanced satisfaction metrics.</li>
         </ul>
       </div>
 
@@ -233,10 +208,10 @@
         <div class="job-date">February 2022 – November 2023 | <span class="company-name">Heltia</span></div>
         <ul>
           <li><strong>Architected scalable microservices ecosystem</strong> on Azure with ASP.NET Core supporting 1M+ customers; delivered robust content delivery, messaging, and video communication services.</li>
-          <li><strong>Developed cross-platform mobile features</strong> in Flutter with Firebase Cloud Messaging integration and REST API connectivity; enhanced real-time communication capabilities across devices.</li>
-          <li><strong>Integrated Notion-to-App API pipeline</strong> for automated content publishing; enabled seamless delivery of 20+ daily articles reaching 2M readers with optimized engagement metrics.</li>
-          <li><strong>Implemented dynamic recommendation algorithm</strong> using D'Hondt mathematical model; improved content relevance and user engagement through personalized content delivery.</li>
-          <li><strong>Designed resilient cloud infrastructure</strong> with Azure DevOps CI/CD pipelines, MongoDB, and App Services; maintained high availability and scalability for enterprise-level applications.</li>
+          <li><strong>Developed cross-platform mobile features</strong> in Flutter with Firebase integration and REST API connectivity; enhanced real-time communication capabilities across devices.</li>
+          <li><strong>Integrated Notion-to-App API pipeline</strong> for automated content publishing; enabled delivery of 20+ daily articles reaching 2M readers with optimized engagement.</li>
+          <li><strong>Implemented dynamic recommendation algorithm</strong> using D'Hondt mathematical model; improved content relevance and user engagement through personalized delivery.</li>
+          <li><strong>Designed resilient cloud infrastructure</strong> with Azure DevOps CI/CD, MongoDB, and App Services; maintained high availability for enterprise applications.</li>
         </ul>
       </div>
 
@@ -244,9 +219,9 @@
         <div class="job-title">Data Engineer</div>
         <div class="job-date">August 2018 – February 2022 | <span class="company-name">Veloxity Inc</span></div>
         <ul>
-          <li><strong>Orchestrated comprehensive cloud migration</strong> from on-premise infrastructure to Databricks platform; successfully converted Spark jobs, HDFS, Hive, Cloudera Impala, and Kafka pipelines within 6-month timeline.</li>
-          <li><strong>Developed automated POI insertion tool</strong> for geospatial data processing; reduced manual operational workload by 40 hours monthly and improved overall efficiency metrics.</li>
-          <li><strong>Engineered bi-directional GIS data processing pipeline</strong> with cost-optimized algorithms; achieved 45x reduction in processing costs through innovative computational approaches.</li>
+          <li><strong>Orchestrated comprehensive cloud migration</strong> from on-premise to Databricks platform; converted Spark jobs, HDFS, Hive, Cloudera Impala, and Kafka pipelines within 6-month timeline.</li>
+          <li><strong>Developed automated POI insertion tool</strong> for geospatial data processing; reduced manual operational workload by 40 hours monthly and improved efficiency.</li>
+          <li><strong>Engineered bi-directional GIS data processing pipeline</strong> with cost-optimized algorithms; achieved 45x reduction in processing costs through innovative approaches.</li>
         </ul>
       </div>
     </div>
@@ -256,13 +231,12 @@
       <div class="tech-skills">
         <ul>
           <li><strong>Programming Languages:</strong> Python, Bash, C#, Java, Scala, Dart, SQL, JavaScript, TypeScript</li>
-          <li><strong>Cloud Platforms & Infrastructure:</strong> AWS (EC2, EKS, S3, CDN), Azure (App Services, DevOps), Kubernetes, Terraform, Docker</li>
-          <li><strong>ML/Data Engineering:</strong> Apache Airflow, Apache Spark, Kafka, Databricks, PyTorch, Hadoop, Hive, Cloudera Impala, Apache Iceberg, Nuclio</li>
-          <li><strong>CI/CD & DevOps:</strong> GitHub CI/CD, Azure DevOps, Docker, Terraform, Helm, JupyterHub</li>
-          <li><strong>Databases & Storage:</strong> PostgreSQL, MongoDB, Elastic Stack, MinIO, HDFS</li>
-          <li><strong>Frontend & Mobile:</strong> Flutter, Svelte, Three.js, Vite, Firebase Cloud Messaging</li>
-          <li><strong>Operating Systems & Virtualization:</strong> Linux (Debian), Unix, Windows, Wine, KVM, Proxmox VE</li>
-          <li><strong>Specialized Technologies:</strong> MCP Protocols, LLMs (Anthropic Claude, OpenAI GPT), CUDA, FUSE, OCR</li>
+          <li><strong>Cloud Platforms:</strong> AWS (EC2, EKS, S3, CDN), Azure (App Services, DevOps), Kubernetes, Terraform, Docker</li>
+          <li><strong>Data Engineering:</strong> Apache Airflow, Apache Spark, Kafka, Databricks, PyTorch, Hadoop, Hive, Apache Iceberg</li>
+          <li><strong>DevOps:</strong> GitHub CI/CD, Azure DevOps, Docker, Terraform, Helm, JupyterHub</li>
+          <li><strong>Databases:</strong> PostgreSQL, MongoDB, Elastic Stack, MinIO, HDFS</li>
+          <li><strong>Frontend/Mobile:</strong> Flutter, Svelte, Three.js, Vite, Firebase</li>
+          <li><strong>Systems:</strong> Linux (Debian), Unix, Windows, Wine, KVM, Proxmox VE, CUDA, FUSE</li>
         </ul>
       </div>
     </div>
@@ -273,7 +247,7 @@
         <div class="job-title">Bachelor of Science in Computer Science, Honors</div>
         <div class="job-date">2015 – 2021 | <span class="company-name">MEF University</span></div>
         <ul>
-          <li><strong>Teaching Assistant</strong> (October 2018 – June 2020): Distributed Systems, Computer Architecture, and System Programming</li>
+          <li><strong>Teaching Assistant:</strong> Distributed Systems, Computer Architecture, System Programming (Oct 2018 – Jun 2020)</li>
         </ul>
       </div>
     </div>
