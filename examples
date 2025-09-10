@@ -1,0 +1,9 @@
+Current version:
+Designed and provisioned Kubernetes clusters using Terraform for scalable ML workloads with Nuclio, Minio, and Apache Iceberg. These clusters can be shipped to any insurance company's infrastructure, ensuring flexibility and adaptability.
+
+Intermediate version:
+Designed and provisioned Kubernetes-based cloud infrastructure using Terraform for scalable ML workloads, incorporating serverless fault-tolerant pipelines (Nuclio), object storage (MinIO), and data lakehouse architecture (Apache Iceberg). Delivered flexible, portable solutions deployable across insurance company infrastructures.
+
+Suggested improvement:
+“Provisioned Kubernetes-based cloud infrastructure with Terraform for scalable ML workloads, integrating serverless pipelines, object storage, and data lakehouse architecture; delivered portable solutions deployable across insurance infrastructures.”
+
