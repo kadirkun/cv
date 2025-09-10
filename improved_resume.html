@@ -7,119 +7,171 @@
   <title>Kadir Kundakcioglu</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      font-size: 12px;
-      line-height: 1.5;
-      color: #000;
+      font-family: 'Times New Roman', serif;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #333;
       margin: 0;
       padding: 20px;
       box-sizing: border-box;
+      background-color: #f8f9fa;
     }
 
     .container {
       max-width: 210mm;
       margin: 0 auto;
       background-color: #fff;
-      padding: 0;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border: 1px solid #e0e0e0;
     }
 
     .header {
-      text-align: left;
-      border-bottom: 2px solid #000;
-      margin-bottom: 15px;
-      padding-bottom: 8px;
+      text-align: center;
+      border-bottom: 3px double #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
     }
 
     .header-title {
-      font-size: 15px;
+      font-size: 14px;
       margin-top: 5px;
+      color: #555;
+      font-style: italic;
     }
 
     h1 {
-      color: #000;
-      margin: 0 0 5px 0;
-      font-size: 26px;
+      color: #2c3e50;
+      margin: 0 0 8px 0;
+      font-size: 28px;
       font-weight: bold;
+      letter-spacing: 1px;
     }
 
     h2 {
-      color: #000;
-      border-bottom: 1px solid #000;
-      padding-bottom: 2px;
-      margin: 15px 0 8px 0;
-      font-size: 17px;
+      color: #2c3e50;
+      border-bottom: 2px solid #34495e;
+      padding-bottom: 3px;
+      margin: 20px 0 10px 0;
+      font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     p {
-      margin: 0 0 5px 0;
+      margin: 0 0 6px 0;
+      text-align: justify;
     }
 
     .job-title {
       font-weight: bold;
-      font-size: 14px;
-      color: #000;
-      margin-bottom: 2px;
+      font-size: 13px;
+      color: #2c3e50;
+      margin-bottom: 3px;
     }
 
     .job-date {
-      font-style: normal;
-      font-size: 12px;
-      color: #000;
-      margin-bottom: 5px;
+      font-style: italic;
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 8px;
     }
 
     .company-name {
       font-weight: bold;
-      color: #000;
+      color: #34495e;
     }
 
     ul {
-      padding-left: 18px;
-      margin: 8px 0;
+      padding-left: 20px;
+      margin: 10px 0;
     }
 
     li {
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       text-align: justify;
+      line-height: 1.5;
     }
 
     .contact-info {
-      font-size: 12px;
-      margin-top: 5px;
+      font-size: 11px;
+      margin-top: 8px;
+      color: #555;
     }
 
     .contact-info a {
-      color: #000;
+      color: #2980b9;
       text-decoration: none;
     }
 
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
     .segment {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       page-break-inside: avoid;
     }
 
     .job {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       page-break-inside: avoid;
+      padding-left: 5px;
+      border-left: 3px solid #ecf0f1;
     }
 
     strong {
       font-weight: bold;
-      color: #000;
+      color: #2c3e50;
+    }
+
+    /* Technical skills styling */
+    .tech-skills {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      margin: 10px 0;
+    }
+
+    .tech-skills ul {
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    .tech-skills li {
+      margin-bottom: 8px;
+    }
+
+    /* Education styling */
+    .education-item {
+      background-color: #fafafa;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      margin-bottom: 10px;
     }
 
     /* Print optimization */
     @media print {
       body {
-        font-size: 11px;
-        line-height: 1.4;
+        font-size: 10px;
+        line-height: 1.3;
+        background-color: white;
       }
       .container {
         max-width: none;
         margin: 0;
-        padding: 0;
+        padding: 15px;
+        box-shadow: none;
+        border: none;
+      }
+      .tech-skills {
+        background-color: white;
+        border-left: 2px solid #333;
+      }
+      .education-item {
+        background-color: white;
+        border: 1px solid #333;
       }
     }
   </style>
@@ -201,21 +253,23 @@
 
     <div class="segment">
       <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, Bash, C#, Java, Scala, Dart, SQL, JavaScript, TypeScript</li>
-        <li><strong>Cloud Platforms & Infrastructure:</strong> AWS (EC2, EKS, S3, CDN), Azure (App Services, DevOps), Kubernetes, Terraform, Docker</li>
-        <li><strong>ML/Data Engineering:</strong> Apache Airflow, Apache Spark, Kafka, Databricks, PyTorch, Hadoop, Hive, Cloudera Impala, Apache Iceberg, Nuclio</li>
-        <li><strong>CI/CD & DevOps:</strong> GitHub CI/CD, Azure DevOps, Docker, Terraform, Helm, JupyterHub</li>
-        <li><strong>Databases & Storage:</strong> PostgreSQL, MongoDB, Elastic Stack, MinIO, HDFS</li>
-        <li><strong>Frontend & Mobile:</strong> Flutter, Svelte, Three.js, Vite, Firebase Cloud Messaging</li>
-        <li><strong>Operating Systems & Virtualization:</strong> Linux (Debian), Unix, Windows, Wine, KVM, Proxmox VE</li>
-        <li><strong>Specialized Technologies:</strong> MCP Protocols, LLMs (Anthropic Claude, OpenAI GPT), CUDA, FUSE, OCR</li>
-      </ul>
+      <div class="tech-skills">
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, Bash, C#, Java, Scala, Dart, SQL, JavaScript, TypeScript</li>
+          <li><strong>Cloud Platforms & Infrastructure:</strong> AWS (EC2, EKS, S3, CDN), Azure (App Services, DevOps), Kubernetes, Terraform, Docker</li>
+          <li><strong>ML/Data Engineering:</strong> Apache Airflow, Apache Spark, Kafka, Databricks, PyTorch, Hadoop, Hive, Cloudera Impala, Apache Iceberg, Nuclio</li>
+          <li><strong>CI/CD & DevOps:</strong> GitHub CI/CD, Azure DevOps, Docker, Terraform, Helm, JupyterHub</li>
+          <li><strong>Databases & Storage:</strong> PostgreSQL, MongoDB, Elastic Stack, MinIO, HDFS</li>
+          <li><strong>Frontend & Mobile:</strong> Flutter, Svelte, Three.js, Vite, Firebase Cloud Messaging</li>
+          <li><strong>Operating Systems & Virtualization:</strong> Linux (Debian), Unix, Windows, Wine, KVM, Proxmox VE</li>
+          <li><strong>Specialized Technologies:</strong> MCP Protocols, LLMs (Anthropic Claude, OpenAI GPT), CUDA, FUSE, OCR</li>
+        </ul>
+      </div>
     </div>
 
     <div class="segment">
       <h2>Education</h2>
-      <div class="job">
+      <div class="education-item">
         <div class="job-title">Bachelor of Science in Computer Science, Honors</div>
         <div class="job-date">2015 – 2021 | <span class="company-name">MEF University</span></div>
         <ul>
